@@ -1,0 +1,119 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  background-color: #202124;
+}
+
+.buymeacoffee {
+  text-decoration: none;
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  height: 3.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.buymeacoffee:hover {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.canvas-wrapper {
+  position: relative;
+}
+
+/* Stili per l'overlay del canvas */
+.canvas-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  z-index: 1; /* Assicura che l'overlay sia sopra il canvas */
+}
+
+/* Stili per il canvas */
+.canvas-wrapper canvas {
+  z-index: 0; /* Assicura che il canvas sia dietro l'overlay */
+}
+.overlay {
+  display: block;
+  padding: 5% 3%;
+}
+h1 {
+  color: white;
+
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4em;
+}
+h2 {
+  color: white;
+
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5em;
+}
+
+button {
+  color: white;
+  background-color: #202124;
+  border: solid 1px white;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 1% 2%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  justify-content: space-evenly;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  /* From https://css.glass */
+  background: rgb(255 255 255 / 5%);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.main {
+  height: 300px;
+  width: 100%;
+}
+.buymeacoffee ul {
+  list-style-type: none;
+  display: flex;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+}
+.terms ul {
+  gap: 20px;
+}
